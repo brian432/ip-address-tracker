@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <title>IP Address Tracker</title>
+</head>
+
+<body>
+    <div id="fondoArriba"></div>
+    <div id="info">
+        <h1>IP Address Tracker</h1>
+        <div id="form">
+            <input type="search" placeholder="Search for any IP address or domain">
+            <div id="buscar">&#62;</div>
+        </div>
+        <div id="resultado">
+            <div id="address">
+                <p>IP ADDRESS</p>
+                <span>192.212.174.101</span>
+            </div>
+            <div id="location">
+                <p>LOCATION</p>
+                <span>US, California</span>
+            </div>
+            <div id="timezone">
+                <p>TIMEZONE</p>
+                <span>UTC -08:00</span>
+            </div>
+            <div id="isp">
+                <p>ISP</p>
+                <span>Southern California Edison</span>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
